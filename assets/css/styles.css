@@ -1,0 +1,301 @@
+/*DECLARACION DE FUENTES*/
+
+/*Se pueden utilizar Poppins-Thin, Poppins-Regular, Poppins-SemiBold o Poppins-Bold según el efecto que 
+queramos dar. Por defecto se declara 'Poppins-Regular' para todos los elementos, pero puede cambiarse siempre.*/
+
+/*Poppins-Thin*/
+@font-face {
+  font-family: 'Poppins-Thin';
+  src: url('../fonts/poppins/Poppins-Thin.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*Poppins-Regular*/
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('../fonts/poppins/Poppins-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*Poppins-SemiBold*/
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*Poppins-Bold*/
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('../fonts/poppins/Poppins-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*FIN - DECLARACION DE FUENTES*/
+
+/*----------------------------------------------------------------------------------------------*/
+
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Poppins-Regular', Arial;
+  color:rgb(238, 238, 238);
+}
+body{
+  background-color: #2e2e2e;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*BANNER*/
+
+header{
+  width: 100%;
+  height: 650px;
+  background-color: none;  /* fallback for old browsers */
+  background:none, url(../img/banner/fondo-banner.jpg);
+  background:none, url(../img/banner/fondo-banner.jpg);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: auto;
+  display:flex;
+  flex-direction: column;
+}
+
+header .contenedor-menu{
+  align-items: center;
+  padding: 10px;
+  display:flex;
+  flex-direction: row;
+}
+
+header .contenedor-menu .logo{
+  width:50%;
+}
+header .contenedor-menu .menu{
+  width:50%;
+}
+header .contenedor-menu .menu nav{
+  display:flex;
+  justify-content: space-between;
+}
+header .contenedor-menu .menu nav a{
+  text-decoration: none;
+  color:#fff;
+  font-family: 'Poppins-Bold', Arial;
+}
+header .main-logo{
+  display: flex;
+  justify-content: center;
+}
+header .main-logo img{
+  width:700px;
+}
+
+header .social{
+  display: flex;
+  justify-content: right;
+}
+header .social ul{
+  list-style: none;
+  width:20%;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .social ul li{
+  display: flex;
+  justify-content: center;
+}
+header .social ul li a img{
+  margin:10px;
+  width:40px;
+}
+header .social ul li a img:hover{
+  width:45px;
+  margin:7.5px;
+}
+/*FIN-BANNER*/
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*SOBRE MI*/
+main section{
+	padding:50px;
+  background: #2e2e2e;
+}
+main section h2{
+	font-family: 'Poppins-Bold', Arial;
+	text-align: center;
+	margin:50px;
+}
+main section .contenedor-row{
+	padding:10px;
+  background: #4e4e4e;
+	/*background: #F5F5F5;*/
+	display:flex;
+	flex-direction: row;
+}
+main section .contenedor-row div{
+	width:50%;
+}
+
+main section .contenedor-row div p{
+	font-family: 'Poppins-Regular', Arial;
+}
+main section .contenedor-row .contenido-texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:15px;
+}
+main section .contenedor-row .contenido-texto h3{
+  font-family: 'Poppins-Bold';
+}
+main section .contenedor-row .contenido-imagenes{
+	display: flex;
+	flex-direction: row;
+}
+main section .contenedor-row .contenido-imagenes div{
+	display: flex;
+	flex-direction: column;
+}
+main section .contenedor-row .contenido-imagenes .bloque-2{
+	justify-content: flex-end;
+}
+main section .contenedor-row .contenido-imagenes .bloque-1{
+	justify-content: flex-start;
+}
+
+main section .contenedor-row .contenido-imagenes div div{
+	width:100%;
+}
+main section .contenedor-row .contenido-imagenes div div img,p{
+	margin:5px;
+}
+/*FIN-SOBRE MI*/
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*GALERÍA*/
+.gallery{
+  background: #2e2e2e;
+  padding:50px;
+  display:flex;
+  flex-direction: column;
+}
+.gallery .row{
+  background: #4e4e4e;
+  display:flex;
+}
+.gallery .row div{
+  width:20%;
+  padding:5px;
+  padding-bottom: 0px;
+}
+.gallery .row div img{
+  width:100%
+}
+/*FIN-GALERÍA*/
+
+/*----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*FOOTER*/
+
+footer {
+  width: 100%;
+  padding: 50px 0px;
+  background-color: #181818;
+}
+
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo_img {
+  width: 100%;
+}
+
+.logo_img img {
+  width: 200px;
+  margin-left: 50px;
+}
+
+.box__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.box__footer .logo img {
+  width: 180px;
+}
+
+.box__footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.box__footer h2 {
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.box__footer a {
+  margin-top: 10px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.box__footer a:hover {
+  opacity: 0.8;
+}
+
+.box__footer a .fab {
+  font-size: 20px;
+}
+
+.box__copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.box__copyright p {
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.box__copyright hr {
+  border: none;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+/*FIN-FOOTER*/
+
+/*----------------------------------------------------------------------------------------------*/
